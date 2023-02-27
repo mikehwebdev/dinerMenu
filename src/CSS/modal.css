@@ -1,0 +1,105 @@
+.modal {
+    display: grid;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    width: 524px;
+    height: 542.24px;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+    grid-template-rows: repeat(5, max-content);
+    gap: 23.22px;
+    grid-template-areas: 
+    ". h2 ."
+    "name name name"
+    "num num num"
+    "cvv cvv cvv"
+    "but but but";
+}
+
+.modal > input {
+    border: solid 1.3px #757575;
+}
+.modal > h2 {
+    grid-area: h2;
+    text-align: center;
+    align-self: center;
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 31.12px;
+    margin: 47.32px 0 46.07px 0;
+}
+.modal > .name {
+    grid-area: name;
+    width: 457px;
+    height: 71.3px;
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: #757575;
+    padding-left: 26.53px;
+    border-radius: 3px;
+}   
+
+.modal > .number {
+    grid-area: num;
+    width: 457px;
+    height: 71.3px;
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: #757575;
+    padding-left: 26.53px;
+    border-radius: 3px;
+}
+
+.modal > .cvv {
+    grid-area: cvv;
+    width: 457px;
+    height: 71.3px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #757575;
+    padding-left: 26.53px;
+    border-radius: 3px;
+}
+.modal > button {
+    grid-area: but;
+    background-color: #16DB99;
+    border: none;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    height: 60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    width: 475.91px;
+    justify-content: center;
+    margin: 0 auto;   
+    cursor: pointer;
+}
+
+.sub-modal {
+    display: grid;
+    position: absolute;
+    top: -30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #ECFDF5;
+    width: 524px;
+    height: 120px;
+    color: #065F46;
+    font-size: 32px;
+    align-content: center;
+    justify-content: center;
+}
+
+.sub-modal > p {
+    align-content:center;
+}

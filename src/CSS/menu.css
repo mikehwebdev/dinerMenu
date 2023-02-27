@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 504px;
+    margin: 67px auto 45px auto;
+}
+
+.menu-item:first-child{
+    padding-top: 0;
+}
+
+.menu > button {
+    cursor: pointer;
+}
