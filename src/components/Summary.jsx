@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Modal from './Modal'
 import '../CSS/summary.css'
 
-export default function Summary (props) {   
+export default function Summary ({summaryElements}) {   
    
    const [displayModal, setDisplayModal] = useState(false)
    const [displayThanks, setDisplayThanks] = useState(false)   
@@ -17,7 +17,7 @@ export default function Summary (props) {
         setDisplaySummary(false)
     }
 
-    const grandTotalArray = props.summaryElements.map(elem =>{
+    const grandTotalArray = summaryElements.map(elem =>{
         return elem.props.foodTotal
        }).reduce((tot, num)=> tot + num )
 
@@ -25,7 +25,7 @@ export default function Summary (props) {
          <div className='summary'>
             <h2>Your order</h2>
             <div className='food-item-summary-container'>
-                {props.summaryElements}
+                {summaryElements}
             </div>
 
             <div className='food-total-container'>
